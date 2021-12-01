@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="276" id="U5I-vj-kfO" customClass="AdvertTableViewCell" customModule="LAWSON109_MINI_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="575" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="U5I-vj-kfO" id="cXg-5k-6xZ">
+                <rect key="frame" x="0.0" y="0.0" width="575" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5I8-OX-mAT">
+                        <rect key="frame" x="0.0" y="0.0" width="575" height="280"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="280" id="naa-ec-DIp"/>
+                        </constraints>
+                    </view>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="CiJ-gv-xAi">
+                        <rect key="frame" x="0.0" y="252.5" width="575" height="27.5"/>
+                        <color key="pageIndicatorTintColor" systemColor="linkColor"/>
+                    </pageControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CiJ-gv-xAi" firstAttribute="bottom" secondItem="5I8-OX-mAT" secondAttribute="bottom" id="Fqq-VA-uPD"/>
+                    <constraint firstAttribute="bottom" secondItem="5I8-OX-mAT" secondAttribute="bottom" id="Hfh-6L-iaw"/>
+                    <constraint firstItem="CiJ-gv-xAi" firstAttribute="leading" secondItem="5I8-OX-mAT" secondAttribute="leading" id="Q1C-KX-sgl"/>
+                    <constraint firstAttribute="trailing" secondItem="5I8-OX-mAT" secondAttribute="trailing" id="bXa-ee-Rvt"/>
+                    <constraint firstItem="5I8-OX-mAT" firstAttribute="leading" secondItem="cXg-5k-6xZ" secondAttribute="leading" id="l8B-Lb-VEl"/>
+                    <constraint firstItem="5I8-OX-mAT" firstAttribute="top" secondItem="cXg-5k-6xZ" secondAttribute="top" id="ofK-2P-vqs"/>
+                    <constraint firstItem="CiJ-gv-xAi" firstAttribute="trailing" secondItem="5I8-OX-mAT" secondAttribute="trailing" id="q86-MJ-yHg"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="uIW-B6-512"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="pageControl" destination="CiJ-gv-xAi" id="t7H-Na-cE3"/>
+                <outlet property="pagerContainer" destination="5I8-OX-mAT" id="B9y-Og-tlP"/>
+            </connections>
+            <point key="canvasLocation" x="197.82608695652175" y="121.20535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

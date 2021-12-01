@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.4.4)
+  - HSCycleGalleryView (1.2.0)
+  - Kingfisher (7.1.1)
+  - LoadingShimmer (1.0.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - HSCycleGalleryView
+  - Kingfisher (~> 7.0)
+  - LoadingShimmer
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - HSCycleGalleryView
+    - Kingfisher
+    - LoadingShimmer
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  HSCycleGalleryView: 5101435175a26d08f1c062cf6cb245f58f09b425
+  Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
+  LoadingShimmer: dd681218498ec9648f572b845a7299b9c62e8e30
+
+PODFILE CHECKSUM: b5517fee59f5c976268f74910550d28cf513eb8c
+
+COCOAPODS: 1.10.2
